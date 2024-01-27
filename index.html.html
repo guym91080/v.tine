@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexadecimal Text</title>
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: monospace;
+            font-size: 5vw; /* Adjust font size for mobile */
+            padding: 20px;
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Ensure full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: .15em solid green; /* Typing cursor */
+            animation: typing 3s steps(40, end), blink-caret 0.75s infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: green; }
+        }
+    </style>
+</head>
+<body>
+    <p id="hexadecimalText">77 69 6C 6C 20 79 6F 75 20 62 65 20 6D 79 20 76 61 6C 65 6E 74 69 6E 65</p>
+</body>
+</html>
